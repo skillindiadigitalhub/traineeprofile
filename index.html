@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainee Details | Skill India</title>
+    <style>
+        body {
+            background-color: #f0f2f5;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+        }
+
+        /* Top Logo Header */
+        .header-logos {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .header-logos img {
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .main-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 4px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .title-bar {
+            padding: 15px 25px;
+            border-bottom: 1px solid #eee;
+            font-size: 18px;
+            font-weight: 500;
+            color: #444;
+        }
+
+        .content-body {
+            padding: 25px;
+        }
+
+        /* Profile Picture Style */
+        .profile-wrapper {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #f39c12;
+            padding: 4px;
+            object-fit: cover;
+        }
+
+        /* Responsive Grid for Details */
+        .details-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .info-item {
+            flex: 1 1 45%; /* Two columns on PC */
+            margin-bottom: 15px;
+            min-width: 250px;
+        }
+
+        /* Full width for address */
+        .info-item.full-width {
+            flex: 1 1 100%;
+        }
+
+        .label {
+            display: block;
+            color: #888;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .value {
+            display: block;
+            color: #333;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        /* Mobile specific adjustments */
+        @media (max-width: 600px) {
+            .info-item {
+                flex: 1 1 100%; /* Single column on Mobile */
+                border-bottom: 1px solid #f9f9f9;
+                padding-bottom: 8px;
+            }
+            .header-logos img {
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-logos">
+        <div style="font-weight: bold; color: #555;">Skill India</div>
+        <div style="font-weight: bold; color: #d35400;">ITI</div>
+        <div style="font-size: 10px; text-align: right;">Ministry of Skill Development <br>& Entrepreneurship</div>
+    </div>
+
+    <div class="main-container">
+        <div class="title-bar">Trainee Details</div>
+        
+        <div class="content-body">
+            <div class="profile-wrapper">
+                <img src="SUJEET.jpg" alt="Trainee Photo" class="profile-pic">
+            </div>
+
+            <div class="details-grid">
+                <div class="info-item">
+                    <span class="label">Roll No</span>
+                    <span class="value">00220810083511</span>
+                </div>
+
+                <div class="info-item">
+                    <span class="label">Name</span>
+                    <span class="value">SUJEET KUMAR</span>
+                </div>
+
+                <div class="info-item">
+                    <span class="label">Father Name</span>
+                    <span class="value">NARAYAN YADAV</span>
+                </div>
+
+                <div class="info-item">
+                    <span class="label">Trade Code</span>
+                    <span class="value">453</span>
+                </div>
+
+                <div class="info-item">
+                    <span class="label">Trade Name</span>
+                    <span class="value">FITTER (NSQF)</span>
+                </div>
+
+                <div class="info-item">
+                    <span class="label">Admission Year</span>
+                    <span class="value">2022</span>
+                </div>
+
+                <div class="info-item">
+                    <span class="label">Date of Birth</span>
+                    <span class="value">21-Jun-1998</span>
+                </div>
+
+                <div class="info-item">
+                    <span class="label">ITI Code</span>
+                    <span class="value">PR10000588</span>
+                </div>
+
+                <div class="info-item">
+                    <span class="label">ITI Name</span>
+                    <span class="value">EKLAUVA ITI</span>
+                </div>
+
+                <div class="info-item">
+                    <span class="label">Shift</span>
+                    <span class="value">1</span>
+                </div>
+
+                <div class="info-item">
+                    <span class="label">Unit</span>
+                    <span class="value">1</span>
+                </div>
+
+                <div class="info-item full-width">
+                    <span class="label">Examination Center Address</span>
+                    <span class="value">2045-VISIT Darshan Institute of Management & Technology Pvt. Ltd., AURANGABAD, INDUSTRIAL GROWTH CENTER</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
